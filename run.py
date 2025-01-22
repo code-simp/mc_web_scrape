@@ -76,7 +76,7 @@ if __name__ == "__main__":
 
     # call the schedule method
     html_string = get_html(MONEY_CONTROL_URL)
-    schedule_job(1, parse_data, html_string)
+    schedule_job(10, parse_data, html_string)
 
     while True:
         schedule.run_pending()
